@@ -12,7 +12,7 @@ they change (in ../../myThing), run GGF again and it will reset
 the `_gen` branch to contain a single commit of the latest version
 only.
 
-Statges:
+Stages:
 
  0. create empty orphan branch based on existing repo. folder
  1. add new files
@@ -55,7 +55,7 @@ def git(cmd, repo=None):
 class GGFStage:
     def __init__(self, path_real, path_gen):
         """__init__ - init. stage
-    
+
         :param str path_real: path to real branch
         :param str path_gen: path to generated files branch
         """
