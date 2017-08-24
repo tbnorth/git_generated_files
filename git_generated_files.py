@@ -88,7 +88,7 @@ class CreateGen(GGFStage):
             # git("branch -u origin/"+self.branch_gen)
             print("Do initial push to set upstream? (y/n)")
             if input().lower() == 'y':
-                git('push --set-upstream origin '+self.branch_gen,
+                git('push --force --set-upstream origin '+self.branch_gen,
                     self.path_gen)
         else:
             print("Can't set up remote for '%s'" % self.branch_gen)
